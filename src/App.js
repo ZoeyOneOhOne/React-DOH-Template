@@ -35,6 +35,10 @@ function App() {
               </Switch>
             </Fragment>
           </Router>
+
+          <div style={{bottom: 20, textAlign: 'center', position: 'absolute', marginLeft: 20}}>
+            <p>DOT copywrite 2021.</p>
+          </div>
     </Fragment>
   );
 }
