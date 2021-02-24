@@ -6,6 +6,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+(If you don't already have it please intall yarn; it is superior to npm. You can download yarn here: https://classic.yarnpkg.com/en/docs/install/#windows-stable)
+
 ### `yarn start`
 
 Runs the app in the development mode.\
