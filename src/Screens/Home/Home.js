@@ -9,6 +9,7 @@ function Home() {
 
   const [temp, setTemp] = useState("");
 
+  //Fetch data from the OpenWeatherMaps free api: https://openweathermap.org/api
   const fetchItems = async () => {
     const data = await fetch('http://api.openweathermap.org/data/2.5/weather?q=Charleston&appid=4df7cfc15bfeb45b68bc24aeb62af934');
     const items = await data.json();

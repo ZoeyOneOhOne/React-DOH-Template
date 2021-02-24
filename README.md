@@ -72,3 +72,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## Additional software
+
+### `Bootstrap`
+
+This template employs Twitter's bootstrap for React. You can learn more here: https://react-bootstrap.github.io/components/alerts
