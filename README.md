@@ -2,18 +2,20 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+If you don't already have it please intall yarn; it is superior to npm. You can download yarn here: https://classic.yarnpkg.com/en/docs/install/#windows-stable 
+
+If you have never used yarn before you can learn more by checking out the docs here: https://classic.yarnpkg.com/en/docs
+
 ## Available Scripts
 
 In the project directory, you can run:
-
-(If you don't already have it please intall yarn; it is superior to npm. You can download yarn here: https://classic.yarnpkg.com/en/docs/install/#windows-stable)
 
 ### `yarn start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
+The page will reload if you make edits and save.\
 You will also see any lint errors in the console.
 
 ### `yarn test`
