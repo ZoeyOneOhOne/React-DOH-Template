@@ -8,9 +8,9 @@ If you have never used yarn before you can learn more by checking out the docs h
 
 # Installing this template
 
-To install this template all you need to do is clone the repository and then in a terminal type: 'npm install'.
+To install this template all you need to do is clone the repository and then in a terminal type: `npm install`.
 
-Once the install is finished type: ''''yarn start'''' to get going.
+Once the install is finished type: `yarn start` to get going.
 
 
 ## Available Scripts
