@@ -1,8 +1,8 @@
 # Installing this template
 
-If you don't already have it please intall yarn; it is superior to npm. You can download yarn here: https://classic.yarnpkg.com/en/docs/install/#windows-stable 
+Node.js is required to run React applications, if you do not already have it you can download it here: https://nodejs.org/en/download/
 
-If you have never used yarn before you can learn more by checking out the docs here: https://classic.yarnpkg.com/en/docs
+Also, if you don't already have it please intall yarn; it is superior to npm. You can download yarn here: https://classic.yarnpkg.com/en/docs/install/#windows-stable 
 
 To install this template all you need to do is clone the repository and then in a terminal type: `yarn install`.
 
