@@ -6,6 +6,13 @@ If you don't already have it please intall yarn; it is superior to npm. You can 
 
 If you have never used yarn before you can learn more by checking out the docs here: https://classic.yarnpkg.com/en/docs
 
+# Installing this template
+
+To install this template all you need to do is clone the repository and then in a terminal type: 'npm install'.
+
+Once the install is finished type: 'yarn start' to get going.
+
+
 ## Available Scripts
 
 In the project directory, you can run:
