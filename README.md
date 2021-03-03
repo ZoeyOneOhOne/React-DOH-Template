@@ -35,6 +35,16 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
+
+
+
+# Notes
+
+- There seems to be a problem with react-scripts 4.0.3. Change it to 4.0.1 in package.json file.
+
+- The "webpack.config" file is often referenced but not easily found. Here is the path to it: node_modules\react-scripts\config
+
+
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
