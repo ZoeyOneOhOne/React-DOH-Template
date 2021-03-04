@@ -7,6 +7,15 @@ function Home() {
     fetchItems();
   }, []);
 
+  useEffect(() =>{
+    fetch('/api').then(response =>{
+      if(response.ok){
+        return response.json();
+      }
+    }).then(data => console.log(data));
+  }, []);
+
+
   const [temp, setTemp] = useState("");
 
   //Fetch data from the OpenWeatherMaps free api: https://openweathermap.org/api
