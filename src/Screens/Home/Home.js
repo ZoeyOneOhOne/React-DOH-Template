@@ -3,6 +3,9 @@ import './Style.css';
 import centerPic from "../../Assets/transportation.png";
 
 function Home() {
+  const [strngToDisplay, setStringToDisplay] = useState("");
+  const [temp, setTemp] = useState("");
+
   useEffect(() => {
     fetchItems();
   }, []);
@@ -12,11 +15,8 @@ function Home() {
       if(response.ok){
         return response.json();
       }
-    }).then(data => console.log(data));
+    }).then(data => setStringToDisplay(data.name));
   }, []);
-
-
-  const [temp, setTemp] = useState("");
 
   //Fetch data from the OpenWeatherMaps free api: https://openweathermap.org/api
   const fetchItems = async () => {
@@ -25,12 +25,15 @@ function Home() {
     setTemp(items.main.temp);
   }
 
+
+  //The actual view
   return (
     <Fragment>
       <center>
       {/* <Image source={centerPic} /> */}
         <h1>Landing Page</h1>
         <p>Temperature in Charleston WV (Kelvin): {temp}</p>
+        <p>The response form api was: {strngToDisplay}</p>
       </center>
     </Fragment>
   );
