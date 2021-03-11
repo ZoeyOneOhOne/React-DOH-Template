@@ -3,6 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import create_engine
 from flask import jsonify
 
+
 app = Flask(__name__)
 app.config['MAIL_SERVER'] = "10.200.146.27"
 app.config['MAIL_PORT'] = 25
@@ -18,12 +19,15 @@ class Case_Log(db.Model):
     ID = db.Column(db.Integer, primary_key=True)
     Name = db.Column(db.String(50))
     Phone1 = db.Column(db.String(50))
-    OrgNumber = db.Column(db.String(4))
+    OrgNumber = db.Column(db.Integer)
     DateOfTest = db.Column(db.String(50))
     DateOfExposure = db.Column(db.String(50))
-    NumberOfExposed = db.Column(db.String(50))
+    NumberOfExposed = db.Column(db.Integer)
     Notes = db.Column(db.String(225))
     PathToFile = db.Column(db.String(50))
+
+    def __repr__(self):
+        return  f'{self.ID} {self.Name}'
 
 def case_log_serializer(Case_Log):
     return{
@@ -36,9 +40,12 @@ def case_log_serializer(Case_Log):
 def index():
     case_logs = Case_Log.query.all()
     return jsonify([*map(case_log_serializer, Case_Log.query.all())])
-    # return {
-    #     'name': 'What up!'
-    # }
+
+@app.route('/apiCall2', methods=['GET'])
+def alsoIndex():
+    return {
+        'name': 'Jim Donaghue'
+    }
 
 @app.route('/<string:name>')
 def hello_world(name):

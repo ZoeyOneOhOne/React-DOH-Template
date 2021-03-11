@@ -3,8 +3,8 @@ import './Style.css';
 import centerPic from "../../Assets/transportation.png";
 
 function Home() {
-  const [strngToDisplay, setStringToDisplay] = useState("");
   const [temp, setTemp] = useState("");
+  const [randoName, setRandoName] = useState("");
 
   useEffect(() => {
     fetchItems();
@@ -15,7 +15,15 @@ function Home() {
       if(response.ok){
         return response.json();
       }
-    }).then(data => setStringToDisplay(data.name));
+    }).then(data => console.log(data?.Name));
+  }, []);
+
+  useEffect(() =>{
+    fetch('/apiCall2').then(response =>{
+      if(response.ok){
+        return response.json();
+      }
+    }).then(data => setRandoName(data?.name));
   }, []);
 
   //Fetch data from the OpenWeatherMaps free api: https://openweathermap.org/api
@@ -30,10 +38,10 @@ function Home() {
   return (
     <Fragment>
       <center>
-      {/* <Image source={centerPic} /> */}
+      <img src={centerPic} alt="Logo"/>
         <h1>Landing Page</h1>
         <p>Temperature in Charleston WV (Kelvin): {temp}</p>
-        <p>The response form api was: {strngToDisplay}</p>
+        <p>The rando name form python api was: {randoName}</p>
       </center>
     </Fragment>
   );
