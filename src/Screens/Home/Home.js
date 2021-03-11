@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useEffect, Image } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 import './Style.css';
 import centerPic from "../../Assets/transportation.png";
 

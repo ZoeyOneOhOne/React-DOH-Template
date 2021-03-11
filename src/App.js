@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from './Screens/Home/Home';
 import About from './Screens/About/About';
+import Contact from './Screens/Contact/Contact';
 import { Fragment } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Navbar, Form, FormControl, Nav } from 'react-bootstrap';
@@ -16,6 +17,7 @@ function App() {
                 <Navbar.Brand as={Link} to="/"><img src={logo} style={{ width: 30, height: 30}} alt="It didn't load."/></Navbar.Brand>
                 <Nav className="mr-auto">
                   <Nav.Link as={Link} to="/About">About</Nav.Link>
+                  <Nav.Link as={Link} to="/Contact">Contact Us</Nav.Link>
                 </Nav>
                 <Form inline>
                   <FormControl type="text" placeholder="Search" className="mr-sm-2" />
@@ -31,6 +33,9 @@ function App() {
                 </Route>
                 <Route exact path="/About" component={About}>
                   <About/>
+                </Route>
+                <Route exact path="/Contact" component={Contact}>
+                  <Contact/>
                 </Route>
               </Switch>
             </Fragment>
